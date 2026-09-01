@@ -1,0 +1,278 @@
+:root {
+    --primary: #071952;
+    --accent: #f5b700;
+    --bg: #f4f6fb;
+    --white: #fff;
+    --text: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+main {
+    padding-top: 70px;
+}
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 6%;
+    background: var(--primary);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1000;
+}
+
+nav h1 {
+    color: var(--accent);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero */
+#home {
+    width: 100%;
+    max-width: none;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: var(--white);
+
+    background: linear-gradient(135deg, #071952, #1646a0);
+}
+
+#home h2 {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+#home a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 25px;
+
+    background: var(--accent);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about {
+    background: var(--white);
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #ccc;
+}
+
+#about ul {
+    padding-left: 25px;
+}
+
+#matches {
+    overflow-x: auto;
+}
+
+#team-filter {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: var(--primary);
+    color: var(--white);
+}
+
+td a {
+    background: var(--accent);
+    color: var(--primary);
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#book-ticket {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#book-ticket > div {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+form,
+aside,
+#guidelines article {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #ccc;
+}
+
+form {
+    background: #fafafa;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+}
+
+form button {
+    background: var(--accent);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+aside {
+    background: var(--primary);
+    color: var(--white);
+}
+
+aside h3 {
+    color: var(--accent);
+}
+
+#guidelines > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#guidelines article {
+    background: var(--white);
+}
+
+#guidelines article h3 {
+    color: var(--primary);
+}
+
+footer {
+    padding: 25px;
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    nav {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #book-ticket > div {
+        grid-template-columns: 1fr;
+    }
+
+    #guidelines > div {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        width: 92%;
+        padding: 40px 0;
+    }
+
+    #about,
+    #book-ticket {
+        padding: 25px;
+    }
+
+    #matches,
+    #my-bookings {
+        overflow-x: auto;
+    }
+}
