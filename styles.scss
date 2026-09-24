@@ -1,0 +1,51 @@
+$blue: #071952;
+$yellow: #f5b700;
+$light: #f4f6fb;
+$white: white;
+$black: #222;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: $light;
+    color: $black;
+}
+
+nav {
+    background-color: $blue;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        color: $yellow;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+button {
+    background-color: $yellow;
+    color: $blue;
+    padding: 10px;
+    border: none;
+}
+
+#book-ticket > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 900px) {
+    #book-ticket > div {
+        grid-template-columns: 1fr;
+    }
+}
