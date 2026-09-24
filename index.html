@@ -35,6 +35,7 @@
         <section id="home">
 
             <div>
+
                 <h2>Experience The Stadium Energy Live!</h2>
 
                 <p>
@@ -44,6 +45,7 @@
 
                 <a href="#matches">View Schedule</a>
                 <a href="#book-ticket">Book Ticket</a>
+
             </div>
 
         </section>
@@ -60,6 +62,7 @@
                 popular teams and talented players for an unforgettable
                 cricket experience.
             </p>
+
 
             <h3>Popular Teams</h3>
 
@@ -91,33 +94,78 @@
         </section>
 
 
+        <!-- Activity 5: About IPL Match -->
+        <section id="about-match">
+
+            <h2>About IPL Match</h2>
+
+            <p id="demo"></p>
+
+        </section>
+
+
         <!-- Match Schedule -->
         <section id="matches">
 
             <h2>Match Schedule</h2>
 
+
             <!-- Team Filter -->
             <label for="team-filter">Filter by Team:</label>
 
             <select id="team-filter">
+
                 <option value="all">All Teams</option>
-                <option value="csk">Chennai Super Kings</option>
-                <option value="mi">Mumbai Indians</option>
-                <option value="rcb">Royal Challengers Bengaluru</option>
-                <option value="kkr">Kolkata Knight Riders</option>
-                <option value="dc">Delhi Capitals</option>
-                <option value="rr">Rajasthan Royals</option>
-                <option value="srh">Sunrisers Hyderabad</option>
-                <option value="pbks">Punjab Kings</option>
-                <option value="gt">Gujarat Titans</option>
-                <option value="lsg">Lucknow Super Giants</option>
+
+                <option value="csk">
+                    Chennai Super Kings
+                </option>
+
+                <option value="mi">
+                    Mumbai Indians
+                </option>
+
+                <option value="rcb">
+                    Royal Challengers Bengaluru
+                </option>
+
+                <option value="kkr">
+                    Kolkata Knight Riders
+                </option>
+
+                <option value="dc">
+                    Delhi Capitals
+                </option>
+
+                <option value="rr">
+                    Rajasthan Royals
+                </option>
+
+                <option value="srh">
+                    Sunrisers Hyderabad
+                </option>
+
+                <option value="pbks">
+                    Punjab Kings
+                </option>
+
+                <option value="gt">
+                    Gujarat Titans
+                </option>
+
+                <option value="lsg">
+                    Lucknow Super Giants
+                </option>
+
             </select>
 
 
             <table>
 
                 <thead>
+
                     <tr>
+
                         <th>Match Number</th>
                         <th>Teams</th>
                         <th>Date &amp; Time</th>
@@ -126,12 +174,16 @@
                         <th>Premium</th>
                         <th>VIP</th>
                         <th>Action</th>
+
                     </tr>
+
                 </thead>
+
 
                 <tbody>
 
                     <tr>
+
                         <td>Match 1</td>
                         <td>RCB vs CSK</td>
                         <td>28 March 2026, 7:30 PM</td>
@@ -139,13 +191,18 @@
                         <td>₹800</td>
                         <td>₹2,000</td>
                         <td>₹5,000</td>
+
                         <td>
-                            <a href="#book-ticket">Book</a>
+                            <a href="#book-ticket" class="book-btn">
+                                Book
+                            </a>
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td>Match 2</td>
                         <td>MI vs KKR</td>
                         <td>29 March 2026, 7:30 PM</td>
@@ -153,13 +210,18 @@
                         <td>₹900</td>
                         <td>₹2,200</td>
                         <td>₹5,500</td>
+
                         <td>
-                            <a href="#book-ticket">Book</a>
+                            <a href="#book-ticket" class="book-btn">
+                                Book
+                            </a>
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td>Match 3</td>
                         <td>CSK vs SRH</td>
                         <td>30 March 2026, 7:30 PM</td>
@@ -167,13 +229,18 @@
                         <td>₹700</td>
                         <td>₹1,800</td>
                         <td>₹4,500</td>
+
                         <td>
-                            <a href="#book-ticket">Book</a>
+                            <a href="#book-ticket" class="book-btn">
+                                Book
+                            </a>
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td>Match 4</td>
                         <td>GT vs RR</td>
                         <td>31 March 2026, 7:30 PM</td>
@@ -181,13 +248,18 @@
                         <td>₹750</td>
                         <td>₹1,900</td>
                         <td>₹4,800</td>
+
                         <td>
-                            <a href="#book-ticket">Book</a>
+                            <a href="#book-ticket" class="book-btn">
+                                Book
+                            </a>
                         </td>
+
                     </tr>
 
 
                     <tr>
+
                         <td>Match 5</td>
                         <td>DC vs LSG</td>
                         <td>1 April 2026, 7:30 PM</td>
@@ -195,9 +267,13 @@
                         <td>₹800</td>
                         <td>₹2,000</td>
                         <td>₹5,000</td>
+
                         <td>
-                            <a href="#book-ticket">Book</a>
+                            <a href="#book-ticket" class="book-btn">
+                                Book
+                            </a>
                         </td>
+
                     </tr>
 
                 </tbody>
@@ -216,38 +292,77 @@
             <!-- CSS Grid -->
             <div>
 
+
                 <!-- Booking Form -->
                 <form>
 
-                    <label for="match">Select Match:</label>
+                    <label for="match">
+                        Select Match:
+                    </label>
 
                     <select id="match" required>
-                        <option value="">-- Select Match --</option>
-                        <option>RCB vs CSK - Bengaluru</option>
-                        <option>MI vs KKR - Mumbai</option>
-                        <option>CSK vs SRH - Chennai</option>
-                        <option>GT vs RR - Ahmedabad</option>
-                        <option>DC vs LSG - Delhi</option>
+
+                        <option value="">
+                            -- Select Match --
+                        </option>
+
+                        <option>
+                            RCB vs CSK - Bengaluru
+                        </option>
+
+                        <option>
+                            MI vs KKR - Mumbai
+                        </option>
+
+                        <option>
+                            CSK vs SRH - Chennai
+                        </option>
+
+                        <option>
+                            GT vs RR - Ahmedabad
+                        </option>
+
+                        <option>
+                            DC vs LSG - Delhi
+                        </option>
+
                     </select>
 
 
                     <br><br>
 
 
-                    <label for="stand">Stand Category:</label>
+                    <label for="stand">
+                        Stand Category:
+                    </label>
 
                     <select id="stand" required>
-                        <option value="">-- Select Category --</option>
-                        <option>General - ₹800</option>
-                        <option>Premium - ₹2,000</option>
-                        <option>VIP - ₹5,000</option>
+
+                        <option value="">
+                            -- Select Category --
+                        </option>
+
+                        <option>
+                            General - ₹800
+                        </option>
+
+                        <option>
+                            Premium - ₹2,000
+                        </option>
+
+                        <option>
+                            VIP - ₹5,000
+                        </option>
+
                     </select>
 
 
                     <br><br>
 
 
-                    <label for="tickets">Number of Tickets:</label>
+                    <label for="tickets">
+                        Number of Tickets:
+                    </label>
 
                     <input
                         type="number"
@@ -261,7 +376,9 @@
                     <br><br>
 
 
-                    <label for="name">Full Name:</label>
+                    <label for="name">
+                        Full Name:
+                    </label>
 
                     <input
                         type="text"
@@ -274,7 +391,9 @@
                     <br><br>
 
 
-                    <label for="email">Email:</label>
+                    <label for="email">
+                        Email:
+                    </label>
 
                     <input
                         type="email"
@@ -287,7 +406,9 @@
                     <br><br>
 
 
-                    <label for="phone">Phone Number:</label>
+                    <label for="phone">
+                        Phone Number:
+                    </label>
 
                     <input
                         type="tel"
@@ -364,18 +485,25 @@
             <table>
 
                 <thead>
+
                     <tr>
+
                         <th>Booking ID</th>
                         <th>Match</th>
                         <th>Stand</th>
                         <th>Tickets</th>
                         <th>Total Amount</th>
                         <th>Status</th>
+
                     </tr>
+
                 </thead>
 
+
                 <tbody>
+
                     <!-- Future bookings will appear here -->
+
                 </tbody>
 
             </table>
@@ -392,32 +520,38 @@
             <div>
 
                 <article>
+
                     <h3>Ticket Verification</h3>
 
                     <p>
                         Keep your ticket ready for verification at
                         the stadium entrance.
                     </p>
+
                 </article>
 
 
                 <article>
+
                     <h3>ID Proof Requirement</h3>
 
                     <p>
                         Carry a valid government-issued photo ID
                         along with your ticket.
                     </p>
+
                 </article>
 
 
                 <article>
+
                     <h3>Prohibited Items</h3>
 
                     <p>
                         Weapons, glass containers, large bags and
                         other restricted items are not allowed.
                     </p>
+
                 </article>
 
             </div>
@@ -437,6 +571,10 @@
 
     </footer>
 
+
+    <!-- Connect JavaScript file -->
+    <script src="app.js"></script>
+
 </body>
+
 </html>
-```
